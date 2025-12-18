@@ -156,4 +156,90 @@ main{
             }
         }
     }
+    .constructorSection{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+        .sectionHeader{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+        .constructorFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:18px;
+            button{
+                width:240px;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    padding:8px;
+    gap:80px;
+    .footerHeader{
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+        .logo{
+            font-weight: bold;
+            font-size: 24px;
+            padding:12px;
+        }
+        .socials{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        .aboutSection{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            h6{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                padding:0;
+                li{
+                    
+                    a{
+                        color:#BDBDBD;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
