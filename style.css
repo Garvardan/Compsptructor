@@ -135,4 +135,25 @@ main{
             }
         }
     }
+    .comparerSection{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        display: flex;
+        flex-direction: column;
+        .sectionHeader{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            button{
+                width:240px;
+            }
+        }
+    }
 }
