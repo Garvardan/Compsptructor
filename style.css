@@ -22,6 +22,7 @@ header{
     background-image: url(./headerBG.png);
     display: flex;
     flex-direction: column;
+    height: 1080px;
     gap:0px;
     .navbar{
         display: flex;
@@ -63,6 +64,74 @@ header{
                         color:white !important;
                     }
                 }
+            }
+        }
+    }
+    .lozung{
+        background-color: rgba(0, 0, 0, 0.65);
+        padding:8px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        height: 100vh;
+        h1{
+            font-weight: bold;
+            font-size: 64px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}
+
+main{
+    background-color: #212C48;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    section{
+        padding:160px 0;
+    }
+    .shopSection{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+        .sectionHeader{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+        .shopFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:18px;
+            img{
+                aspect-ratio: 1/1;
+                width:240px;
+            }
+            span{
+                font-weight: bold;
+                font-size: 24px;
+            }
+            button{
+                width:240px;
             }
         }
     }
