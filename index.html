@@ -12,12 +12,12 @@
     <header>
         <div class="navbar">
             <span class="logo">КОМПСТРУКТОР</span>
-            <button class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <button class="button phoneOnly" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
                   </svg>
             </button>
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas offcanvas-end phoneOnly" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Меню</h5>
                 <button type="button" class="button" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -33,10 +33,20 @@
                 </ul>
                 <ul class="authorize">
                     <li><button class="button">Увійти</button></li>
-                    <li><button class="button active-button">Зареєструватис я</button></li>
+                    <li><button class="button active-button">Зареєструватися</button></li>
                 </ul>   
             </div>
             </div>
+            <ul class="navLinks pcOnly">
+                <li><a href="./index.html">На головну</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <ul class="authorize pcOnly">
+                <li><button class="button">Увійти</button></li>
+                <li><button class="button active-button">Зареєструватися</button></li>
+            </ul> 
         </div>  
         <div class="lozung">
             <h1>Твій ПК - Твій характер</h1>
@@ -55,8 +65,11 @@
             </div>
             <div class="shopFooter">
                 <img src="./PC.png" alt="PC photo">
-                <span>Шукай вже зараз!</span>
-                <button class="button active-button">В магазин!</button>
+                <div >
+                    <span>Шукай вже зараз!</span>
+                    <button class="button active-button">В магазин!</button> 
+                </div>
+                
             </div>
         </section>
         <section class="comparerSection">
@@ -65,6 +78,44 @@
                     Порівнюй комлектуючі, щоб знайти те, що потрібно тобі
                 </h2>
                 <button class="button active-button">Порівняти</button>
+            </div>
+            <div class="comparing pcOnly">
+                <div class="result">
+                    <div class="lineScale">
+                        <span>100%</span>
+                        <span>75%</span>
+                        <span>50%</span>
+                        <span>25%</span>
+                        <span>0%</span>
+                    </div>
+                    <svg width="699" height="40" viewBox="0 0 699 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="697" height="38" rx="7" fill="#D9D9D9" stroke="#808080" stroke-width="2"/>
+                        <mask id="path-2-inside-1_7_157" fill="white">
+                        <path d="M482 0H691C695.418 0 699 3.58172 699 8V32C699 36.4183 695.418 40 691 40H482V0Z"/>
+                        </mask>
+                        <path d="M482 0H691C695.418 0 699 3.58172 699 8V32C699 36.4183 695.418 40 691 40H482V0Z" fill="#3DC355"/>
+                        <path d="M482 -2H691C696.523 -2 701 2.47715 701 8H697C697 4.68629 694.314 2 691 2H482V-2ZM701 32C701 37.5228 696.523 42 691 42H482V38H691C694.314 38 697 35.3137 697 32H701ZM482 40V0V40ZM691 -2C696.523 -2 701 2.47715 701 8V32C701 37.5228 696.523 42 691 42V38C694.314 38 697 35.3137 697 32V8C697 4.68629 694.314 2 691 2V-2Z" fill="#808080" mask="url(#path-2-inside-1_7_157)"/>
+                    </svg>
+                    <span>Gtx 1650</span>
+                </div>
+                <div class="result">
+                    <div class="lineScale">
+                        <span>100%</span>
+                        <span>75%</span>
+                        <span>50%</span>
+                        <span>25%</span>
+                        <span>0%</span>
+                    </div>
+                    <svg width="699" height="40" viewBox="0 0 699 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="697" height="38" rx="7" fill="#D9D9D9" stroke="#808080" stroke-width="2"/>
+                        <mask id="path-2-inside-1_7_178" fill="white">
+                        <path d="M145 0H691C695.418 0 699 3.58172 699 8V32C699 36.4183 695.418 40 691 40H145V0Z"/>
+                        </mask>
+                        <path d="M145 0H691C695.418 0 699 3.58172 699 8V32C699 36.4183 695.418 40 691 40H145V0Z" fill="#3DC355"/>
+                        <path d="M145 -2H691C696.523 -2 701 2.47715 701 8H697C697 4.68629 694.314 2 691 2H145V-2ZM701 32C701 37.5228 696.523 42 691 42H145V38H691C694.314 38 697 35.3137 697 32H701ZM145 40V0V40ZM691 -2C696.523 -2 701 2.47715 701 8V32C701 37.5228 696.523 42 691 42V38C694.314 38 697 35.3137 697 32V8C697 4.68629 694.314 2 691 2V-2Z" fill="#808080" mask="url(#path-2-inside-1_7_178)"/>
+                        </svg>
+                    <span>RTX 5060 TI</span>
+                </div>
             </div>
         </section>
         <section class="constructorSection">
@@ -77,7 +128,8 @@
                 </span>
             </div>
             <div class="constructorFooter">
-                <img src="./PChardware.png" alt="PC hardware">
+                <img src="./PChardware.png" alt="PC hardware" class="phoneOnly">
+                <img src="./PChardwareFull.png" alt="PC hardware" class="pcOnly">
                 <button class="button active-button">Зібрати</button>
             </div>
         </section>

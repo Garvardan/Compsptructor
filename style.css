@@ -18,12 +18,26 @@
 .active-button{
     background-color: #FFD900;
 }
+
+.phoneOnly{
+    @media (min-width:361px){
+        display: none !important;
+    }
+}
+.pcOnly{
+    @media (max-width:361px){
+        display: none !important;
+    }
+}
 header{
     background-image: url(./headerBG.png);
     display: flex;
     flex-direction: column;
     height: 1080px;
-    gap:0px;
+    @media (min-width:361px){
+        align-items: center;
+        justify-content: space-between;
+    }
     .navbar{
         display: flex;
         flex-direction: row;
@@ -32,6 +46,9 @@ header{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         background-color: rgba(0, 0, 0, 0.65);
+        @media (min-width:361px){
+            padding:30px 300px;
+        }
         .logo{
             font-weight: bold;
             font-size: 24px;
@@ -46,23 +63,26 @@ header{
         .offcanvas-body{
             background-color: #212C48;
             gap:10px;
-            .navLinks{
+            
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap:30px;
+            padding:20px;
+            @media (min-width:361px){
+                flex-direction: row;
+                padding:0;
+                margin: 0;
             }
-            ul{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            li{
+                font-weight: 500;
+                font-size: 18px;
                 list-style: none;
-                gap:30px;
-                padding:20px;
-                li{
-                    font-weight: 500;
-                    font-size: 18px;
-                    list-style: none;
-                    a{
-                        text-decoration:none;
-                        color:white !important;
-                    }
+                a{
+                    text-decoration:none;
+                    color:white !important;
                 }
             }
         }
@@ -77,6 +97,13 @@ header{
         justify-content: space-around;
         text-align: center;
         height: 100vh;
+        @media (min-width:361px){
+            height:fit-content;
+            width:1000px;
+            padding:75px;
+            gap:100px;
+            margin:200px 0 0 477px;
+        }
         h1{
             font-weight: bold;
             font-size: 64px;
@@ -95,6 +122,9 @@ main{
     padding: 8px;
     section{
         padding:160px 0;
+        @media (min-width:361px){
+            padding:160px 300px;
+         }
     }
     .shopSection{
         font-family: "Montserrat", sans-serif;
@@ -102,6 +132,9 @@ main{
         display: flex;
         flex-direction: column;
         gap:60px;
+        @media (min-width:361px){
+           flex-direction: row;
+        }
         .sectionHeader{
             display: flex;
             flex-direction: column;
@@ -109,6 +142,9 @@ main{
             justify-content: space-around;
             align-items: center;
             text-align: center;
+            @media (min-width:361px){
+                max-width:650px;
+             }
             h2{
                 font-weight: bold;
                 font-size: 40px;
@@ -122,17 +158,29 @@ main{
             flex-direction: column;
             align-items: center;
             gap:18px;
+            @media (min-width:361px){
+                flex-direction: row;
+            }
             img{
                 aspect-ratio: 1/1;
                 width:240px;
             }
-            span{
-                font-weight: bold;
-                font-size: 24px;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap:18px;
+                @media (min-width:361px){
+                    gap:55px;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+                button{
+                    width:240px;
+                }   
             }
-            button{
-                width:240px;
-            }
+            
         }
     }
     .comparerSection{
@@ -140,6 +188,10 @@ main{
         font-optical-sizing: auto;
         display: flex;
         flex-direction: column;
+        @media (min-width:361px){
+            flex-direction: row;
+            gap:20px;
+        }
         .sectionHeader{
             display: flex;
             flex-direction: column;
@@ -155,6 +207,23 @@ main{
                 width:240px;
             }
         }
+        .comparing{
+            display: flex;
+            flex-direction: column;
+            gap:42px;
+            .result{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:10px;
+                .lineScale{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
     }
     .constructorSection{
         font-family: "Montserrat", sans-serif;
@@ -162,6 +231,10 @@ main{
         display: flex;
         flex-direction: column;
         gap:60px;
+        @media (min-width:361px){
+            flex-direction: row;
+            align-items: center;
+        }
         .sectionHeader{
             display: flex;
             flex-direction: column;
@@ -198,10 +271,20 @@ main{
     font-optical-sizing: auto;
     padding:8px;
     gap:80px;
+    @media (min-width:361px){
+        padding:8px 300px;
+        width:100%;
+    }
     .footerHeader{
         display: flex;
         flex-direction: column;
         gap:24px;
+        @media (min-width:361px){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
         .logo{
             font-weight: bold;
             font-size: 24px;
@@ -219,6 +302,11 @@ main{
         display: flex;
         flex-direction: column;
         gap:30px;
+        @media (min-width:361px){
+            flex-direction:row ;  
+            justify-content: space-evenly; 
+            width: 100%;
+        }
         .aboutSection{
             display: flex;
             flex-direction: column;
