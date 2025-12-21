@@ -64,12 +64,15 @@ header{
         .offcanvas-body{
             background-color: #212C48;
             gap:10px;
-            
+            display:flex;
+            flex-direction: column;
+            align-items: center;
         }
         ul{
             display: flex;
             flex-direction: column;
             list-style: none;
+            align-items: center;
             gap:30px;
             padding:20px;
             @media (min-width:361px){
