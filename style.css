@@ -29,11 +29,12 @@
         display: none !important;
     }
 }
+
 header{
     background-image: url(./headerBG.png);
     display: flex;
     flex-direction: column;
-    height: 1080px;
+    height: 110vh;
     @media (min-width:361px){
         align-items: center;
         justify-content: space-between;
@@ -102,7 +103,7 @@ header{
             width:1000px;
             padding:75px;
             gap:100px;
-            margin:200px 0 0 477px;
+            margin:200px 0 0 24.8%;
         }
         h1{
             font-weight: bold;
@@ -110,7 +111,7 @@ header{
         }
         span{
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
         }
     }
 }
@@ -119,6 +120,8 @@ main{
     background-color: #212C48;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     padding: 8px;
     section{
         padding:160px 0;
@@ -327,6 +330,68 @@ main{
                         text-decoration: none;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+/** далі йде код для сторінки порівняння**/
+
+.comparerHeader{
+    height:min-content ;
+    background-color: #212C48;
+    background-image: none;
+}
+.comparerMain{
+    min-height:60vh;
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+main{
+    font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+    height: max-content;
+    .comparer{
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+        .options{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .choice{
+                display: flex;
+                flex-direction: row;
+                gap:32px;
+                align-items: center;
+                @media (max-width:360px) {
+                    flex-direction: column;
+                }
+                select{
+                    option{
+                        color:black;
+                    }
+                }
+            }
+        }
+        .parameters{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:160px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            @media (max-width:360px) {
+                flex-direction: column;
+                gap:120px;
+            }
+            .gpuParams{
+                display: flex;
+                flex-direction: column;
+                gap:24px;
+                padding:8px;
+                
             }
         }
     }
